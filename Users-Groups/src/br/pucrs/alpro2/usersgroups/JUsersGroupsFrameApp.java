@@ -6,6 +6,11 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JList;
+import javax.swing.border.LineBorder;
+import java.awt.Color;
+import javax.swing.JLabel;
+import javax.swing.JButton;
 
 public class JUsersGroupsFrameApp extends JFrame {
 
@@ -32,11 +37,30 @@ public class JUsersGroupsFrameApp extends JFrame {
 	 */
 	public JUsersGroupsFrameApp() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 450, 300);
+		setBounds(100, 100, 744, 447);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		contentPane.setLayout(null);
+		
+		JList list = new JList();
+		list.setBorder(new LineBorder(Color.GRAY));
+		list.setBounds(23, 29, 236, 334);
+		contentPane.add(list);
+		
+		JLabel lblCurrentUsers = new JLabel("Current Users");
+		lblCurrentUsers.setBounds(23, 11, 89, 14);
+		contentPane.add(lblCurrentUsers);
+		
+		JButton btnNewButton = new JButton("+");
+		btnNewButton.setBounds(23, 369, 40, 28);
+		contentPane.add(btnNewButton);
+		
+		JButton button = new JButton("-");
+		button.setBounds(72, 369, 40, 28);
+		contentPane.add(button);
+	
+		
 	}
 
 }
