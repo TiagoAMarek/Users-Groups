@@ -6,15 +6,16 @@ public class Users {
 	private String accountName;
 	private int accountType;
 	private String password;
+	private String passwordHint;
 	private Group gp;
 	
-	public Users(String name, String accountName, int accountType, String password, Group gp) {
+	public Users(String name, String accountName, int accountType, String password, String passwordHint) {
 		super();
 		this.name = name;
 		this.accountName = accountName;
 		this.accountType = accountType;
 		this.password = password;
-		this.gp = gp;
+		this.passwordHint = passwordHint;
 	}
 
 	public String getName() {

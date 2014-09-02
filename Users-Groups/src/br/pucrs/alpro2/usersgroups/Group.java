@@ -1,9 +1,12 @@
 package br.pucrs.alpro2.usersgroups;
 
+import java.util.ArrayList;
+
 public class Group {
 	
 	private String name;
 	private int idGroup;
+
 	
 	public Group(String name, int idGroup) {
 		super();
